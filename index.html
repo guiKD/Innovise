@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Projetos - Innovise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Central de Projetos</h1>
+        <nav>
+            <a href="#">Dashboard</a> |
+            <a href="#">Projetos</a> |
+            <a href="#">Busca Inteligente</a> |
+            <a href="#">Novo Desafio</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Explore todos os projetos de inovação da Euron</h2>
+
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="Buscar projetos...">
+            <select id="statusFilter">
+                <option value="">Todos os Status</option>
+                <option value="andamento">Em Andamento</option>
+                <option value="concluido">Concluído</option>
+                <option value="planejamento">Planejamento</option>
+            </select>
+            <select id="areaFilter">
+                <option value="">Todas as Áreas</option>
+                <option value="saude">Saúde Digital</option>
+                <option value="startups">Startups</option>
+                <option value="dados">Dados & Analytics</option>
+            </select>
+        </div>
+
+        <div class="grid" id="projectGrid">
+            <!-- Exemplo de card -->
+            <div class="card" data-status="andamento" data-area="dados">
+                <div class="card-header">
+                    <h3>IA para Previsão de Demanda</h3>
+                    <span class="status andamento">Em Andamento</span>
+                </div>
+                <p>Sistema de machine learning para prever demanda de medicamentos baseado em dados históricos e
+                    sazonalidade.</p>
+                <div class="tags">
+                    <span class="tag">IA</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Supply Chain</span>
+                </div>
+                <div class="card-footer">
+                    <span>👤 Carlos Silva</span>
+                    <span>📅 2024-06-03</span>
+                </div>
+                <div class="actions">
+                    <button class="edit-btn">Editar</button>
+                    <button class="delete-btn">Remover</button>
+                </div>
+                <a href="#" class="btn">Ver Detalhes</a>
+            </div>
+
+
+            <div class="card" data-status="planejamento" data-area="saude">
+                <div class="card-header">
+                    <h3>Plataforma de Telemedicina</h3>
+                    <span class="status planejamento">Planejamento</span>
+                </div>
+                <p>Desenvolvimento de plataforma para consultas médicas remotas integrada ao sistema farmacêutico.</p>
+                <div class="tags">
+                    <span class="tag">Telemedicina</span>
+                    <span class="tag">Digital Health</span>
+                    <span class="tag">API</span>
+                </div>
+                <div class="card-footer">
+                    <span>👤 Ana Costa</span>
+                    <span>📅 2024-06-01</span>
+                </div>
+                <a href="#" class="btn">Ver Detalhes</a>
+            </div>
+
+            <div class="card" data-status="concluido" data-area="saude">
+                <div class="card-header">
+                    <h3>Plataforma de Telemedicina</h3>
+                    <span class="status concluido">Concluído</span>
+                </div>
+                <p>Desenvolvimento de plataforma para consultas médicas remotas integrada ao sistema farmacêutico.</p>
+                <div class="tags">
+                    <span class="tag">Telemedicina</span>
+                    <span class="tag">Digital Health</span>
+                    <span class="tag">API</span>
+                </div>
+                <div class="card-footer">
+                    <span>👤 Antonio Carlos</span>
+                    <span>📅 2024-06-01</span>
+                </div>
+                <a href="#" class="btn">Ver Detalhes</a>
+            </div>
+
+            <div class="card" data-status="concluido" data-area="saude">
+                <div class="card-header">
+                    <h3>Plataforma de Telemedicina</h3>
+                    <span class="status concluido">Concluído</span>
+                </div>
+                <p>Desenvolvimento de plataforma para consultas médicas remotas integrada ao sistema farmacêutico.</p>
+                <div class="tags">
+                    <span class="tag">Telemedicina</span>
+                    <span class="tag">Digital Health</span>
+                    <span class="tag">API</span>
+                </div>
+                <div class="card-footer">
+                    <span>👤 Pedro Luiz</span>
+                    <span>📅 2024-06-01</span>
+                </div>
+                <a href="#" class="btn">Ver Detalhes</a>
+            </div>
+
+            <div class="card" data-status="andamento" data-area="saude">
+                <div class="card-header">
+                    <h3>Plataforma de Telemedicina</h3>
+                    <span class="status andamento">Em andamento</span>
+                </div>
+                <p>Desenvolvimento de plataforma para consultas médicas remotas integrada ao sistema farmacêutico.</p>
+                <div class="tags">
+                    <span class="tag">Telemedicina</span>
+                    <span class="tag">Digital Health</span>
+                    <span class="tag">API</span>
+                </div>
+                <div class="card-footer">
+                    <span>👤 Jorge Henrique</span>
+                    <span>📅 2024-06-01</span>
+                </div>
+                <a href="#" class="btn">Ver Detalhes</a>
+            </div>
+
+            <div class="card" data-status="planejamento" data-area="saude">
+                <div class="card-header">
+                    <h3>Plataforma de Telemedicina</h3>
+                    <span class="status planejamento">Planejamento</span>
+                </div>
+                <p>Desenvolvimento de plataforma para consultas médicas remotas integrada ao sistema farmacêutico.</p>
+                <div class="tags">
+                    <span class="tag">Telemedicina</span>
+                    <span class="tag">Digital Health</span>
+                    <span class="tag">API</span>
+                </div>
+                <div class="card-footer">
+                    <span>👤 Natasha Silva</span>
+                    <span>📅 2024-06-01</span>
+                </div>
+                <a href="#" class="btn">Ver Detalhes</a>
+            </div>
+
+            <!-- Você pode duplicar os cards com outros dados -->
+        </div>
+    </div>
+
+    <h3>Adicionar Novo Projeto</h3>
+    <form id="addProjectForm" class="add-form">
+        <input type="text" id="titulo" placeholder="Título do projeto" required>
+        <textarea id="descricao" placeholder="Descrição" required></textarea>
+
+        <select id="status" required>
+            <option value="">Selecione Status</option>
+            <option value="andamento">Em Andamento</option>
+            <option value="concluido">Concluído</option>
+            <option value="planejamento">Planejamento</option>
+        </select>
+
+        <select id="area" required>
+            <option value="">Selecione Área</option>
+            <option value="dados">Dados & Analytics</option>
+            <option value="saude">Saúde Digital</option>
+            <option value="startups">Startups</option>
+        </select>
+
+        <input type="text" id="tags" placeholder="Tags separadas por vírgula">
+        <input type="text" id="autor" placeholder="Nome do responsável" required>
+        <input type="date" id="data" required>
+
+        <button type="submit">Adicionar Projeto</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "df34724e-de0a-4d5e-ac2d-dbfd6035a424", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "24ae2d13-49b0-4505-9d00-167a75f7c2c5", // The ID of your service instance.
+        onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function () {
+        const t = document.createElement('script');
+        t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+    });
+</script>
+
+</html>
