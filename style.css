@@ -70,25 +70,31 @@ select {
 }
 
 .status {
-    padding: 4px 10px;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 12px;
-    color: #fff;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 12px;
+  color: #fff;
 }
 
+/* Já existentes */
 .status.andamento {
-    background: #007bff;
+  background: #007bff; /* Azul */
 }
 
 .status.concluido {
-    background: #28a745;
+  background: #28a745; /* Verde */
 }
 
-.status.planejamento {
-    background: #ffc107;
-    color: #000;
+/* Novos */
+.status.finalizando {
+  background: #17a2b8; /* Ciano */
 }
+
+.status.suspenso {
+  background: #6c757d; /* Cinza */
+}
+
 
 .tags {
     margin: 10px 0;
