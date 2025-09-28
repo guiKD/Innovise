@@ -10,8 +10,8 @@ let editMode = null; // card que está sendo editado
 // ---------- FUNÇÃO DE FILTRAR ----------
 function filtrarProjetos() {
     const searchText = searchInput.value.toLowerCase();
-    const statusValue = statusFilter.value;
-    const areaValue = areaFilter.value;
+    const statusValue = statusFilter ? statusFilter.value : "";
+    const areaValue = areaFilter ? areaFilter.value : "";
     const cards = projectGrid.getElementsByClassName("card");
 
     for (let card of cards) {
@@ -122,5 +122,5 @@ addProjectForm.addEventListener("submit", function (e) {
 
 // ---------- EVENTOS DE FILTRO ----------
 searchInput.addEventListener("input", filtrarProjetos);
-statusFilter.addEventListener("change", filtrarProjetos);
-areaFilter.addEventListener("change", filtrarProjetos);
+if (statusFilter) statusFilter.addEventListener("change", filtrarProjetos);
+if (areaFilter) areaFilter.addEventListener("change", filtrarProjetos);

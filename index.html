@@ -11,13 +11,7 @@
 <body>
 
     <header>
-        <h1>Central de Projetos</h1>
-        <nav>
-            <a href="#">Dashboard</a> |
-            <a href="#">Projetos</a> |
-            <a href="#">Busca Inteligente</a> |
-            <a href="#">Novo Desafio</a>
-        </nav>
+        <h1>Innovise</h1>
     </header>
 
     <div class="container">
@@ -25,139 +19,402 @@
 
         <div class="filters">
             <input type="text" id="searchInput" placeholder="Buscar projetos...">
-            <select id="statusFilter">
-                <option value="">Todos os Status</option>
-                <option value="andamento">Em Andamento</option>
-                <option value="concluido">Concluído</option>
-                <option value="planejamento">Planejamento</option>
-            </select>
-            <select id="areaFilter">
-                <option value="">Todas as Áreas</option>
-                <option value="saude">Saúde Digital</option>
-                <option value="startups">Startups</option>
-                <option value="dados">Dados & Analytics</option>
-            </select>
         </div>
 
-        <div class="grid" id="projectGrid">
-            <!-- Exemplo de card -->
-            <div class="card" data-status="andamento" data-area="dados">
-                <div class="card-header">
-                    <h3>IA para Previsão de Demanda</h3>
-                    <span class="status andamento">Em Andamento</span>
-                </div>
-                <p>Sistema de machine learning para prever demanda de medicamentos baseado em dados históricos e
-                    sazonalidade.</p>
-                <div class="tags">
-                    <span class="tag">IA</span>
-                    <span class="tag">Machine Learning</span>
-                    <span class="tag">Supply Chain</span>
-                </div>
-                <div class="card-footer">
-                    <span>👤 Carlos Silva</span>
-                    <span>📅 2024-06-03</span>
-                </div>
-                <div class="actions">
-                    <button class="edit-btn">Editar</button>
-                    <button class="delete-btn">Remover</button>
-                </div>
-                <a href="#" class="btn">Ver Detalhes</a>
-            </div>
+       <div class="grid" id="projectGrid">
 
-
-            <div class="card" data-status="planejamento" data-area="saude">
-                <div class="card-header">
-                    <h3>Plataforma de Telemedicina</h3>
-                    <span class="status planejamento">Planejamento</span>
-                </div>
-                <p>Desenvolvimento de plataforma para consultas médicas remotas integrada ao sistema farmacêutico.</p>
-                <div class="tags">
-                    <span class="tag">Telemedicina</span>
-                    <span class="tag">Digital Health</span>
-                    <span class="tag">API</span>
-                </div>
-                <div class="card-footer">
-                    <span>👤 Ana Costa</span>
-                    <span>📅 2024-06-01</span>
-                </div>
-                <a href="#" class="btn">Ver Detalhes</a>
-            </div>
-
-            <div class="card" data-status="concluido" data-area="saude">
-                <div class="card-header">
-                    <h3>Plataforma de Telemedicina</h3>
-                    <span class="status concluido">Concluído</span>
-                </div>
-                <p>Desenvolvimento de plataforma para consultas médicas remotas integrada ao sistema farmacêutico.</p>
-                <div class="tags">
-                    <span class="tag">Telemedicina</span>
-                    <span class="tag">Digital Health</span>
-                    <span class="tag">API</span>
-                </div>
-                <div class="card-footer">
-                    <span>👤 Antonio Carlos</span>
-                    <span>📅 2024-06-01</span>
-                </div>
-                <a href="#" class="btn">Ver Detalhes</a>
-            </div>
-
-            <div class="card" data-status="concluido" data-area="saude">
-                <div class="card-header">
-                    <h3>Plataforma de Telemedicina</h3>
-                    <span class="status concluido">Concluído</span>
-                </div>
-                <p>Desenvolvimento de plataforma para consultas médicas remotas integrada ao sistema farmacêutico.</p>
-                <div class="tags">
-                    <span class="tag">Telemedicina</span>
-                    <span class="tag">Digital Health</span>
-                    <span class="tag">API</span>
-                </div>
-                <div class="card-footer">
-                    <span>👤 Pedro Luiz</span>
-                    <span>📅 2024-06-01</span>
-                </div>
-                <a href="#" class="btn">Ver Detalhes</a>
-            </div>
-
-            <div class="card" data-status="andamento" data-area="saude">
-                <div class="card-header">
-                    <h3>Plataforma de Telemedicina</h3>
-                    <span class="status andamento">Em andamento</span>
-                </div>
-                <p>Desenvolvimento de plataforma para consultas médicas remotas integrada ao sistema farmacêutico.</p>
-                <div class="tags">
-                    <span class="tag">Telemedicina</span>
-                    <span class="tag">Digital Health</span>
-                    <span class="tag">API</span>
-                </div>
-                <div class="card-footer">
-                    <span>👤 Jorge Henrique</span>
-                    <span>📅 2024-06-01</span>
-                </div>
-                <a href="#" class="btn">Ver Detalhes</a>
-            </div>
-
-            <div class="card" data-status="planejamento" data-area="saude">
-                <div class="card-header">
-                    <h3>Plataforma de Telemedicina</h3>
-                    <span class="status planejamento">Planejamento</span>
-                </div>
-                <p>Desenvolvimento de plataforma para consultas médicas remotas integrada ao sistema farmacêutico.</p>
-                <div class="tags">
-                    <span class="tag">Telemedicina</span>
-                    <span class="tag">Digital Health</span>
-                    <span class="tag">API</span>
-                </div>
-                <div class="card-footer">
-                    <span>👤 Natasha Silva</span>
-                    <span>📅 2024-06-01</span>
-                </div>
-                <a href="#" class="btn">Ver Detalhes</a>
-            </div>
-
-            <!-- Você pode duplicar os cards com outros dados -->
-        </div>
+  <!-- Financeiro: Digital Ledger -->
+  <div class="card" data-status="andamento" data-area="financeiro">
+    <div class="card-header">
+      <h3>Digital Ledger</h3>
+      <span class="status andamento">Em Andamento</span>
     </div>
+    <p>Automação de processos contábeis com blockchain para reduzir retrabalho e aumentar a auditabilidade das transações.</p>
+    <div class="tags">
+      <span class="tag">Blockchain</span>
+      <span class="tag">Automação</span>
+      <span class="tag">Financeiro</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 Gerente Financeiro</span>
+      <span>📅 2024-05-10</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+  <!-- Financeiro: Risk Analytics -->
+  <div class="card" data-status="andamento" data-area="financeiro">
+    <div class="card-header">
+      <h3>Risk Analytics</h3>
+      <span class="status andamento">Em Andamento</span>
+    </div>
+    <p>Projeto de análise preditiva para identificação e mitigação de riscos financeiros usando modelos estatísticos.</p>
+    <div class="tags">
+      <span class="tag">Analytics</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Financeiro</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 Coordenador de Risco</span>
+      <span>📅 2024-03-22</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+  <!-- Financeiro: Paperless Tax -->
+  <div class="card" data-status="planejamento" data-area="financeiro">
+    <div class="card-header">
+      <h3>Paperless Tax</h3>
+      <span class="status planejamento">Em Planejamento</span>
+    </div>
+    <p>Iniciativa para eliminar documentos físicos em processos fiscais e integrar arquivos tributários ao repositório digital.</p>
+    <div class="tags">
+      <span class="tag">Automação</span>
+      <span class="tag">Governança</span>
+      <span class="tag">Financeiro</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 Especialista Fiscal</span>
+      <span>📅 2024-09-01</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+  <!-- Inovação: IdeaHub -->
+  <div class="card" data-status="andamento" data-area="inovacao">
+    <div class="card-header">
+      <h3>IdeaHub</h3>
+      <span class="status andamento">Em Andamento</span>
+    </div>
+    <p>Plataforma interna de captação e gestão de ideias, com fluxo de avaliação e priorização automatizado.</p>
+    <div class="tags">
+      <span class="tag">Inovação</span>
+      <span class="tag">Plataforma</span>
+      <span class="tag">Governança</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 Coordenador de Inovação</span>
+      <span>📅 2024-02-14</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+  <!-- Inovação: Future Trends -->
+  <div class="card" data-status="andamento" data-area="inovacao">
+    <div class="card-header">
+      <h3>Future Trends</h3>
+      <span class="status andamento">Em Andamento</span>
+    </div>
+    <p>Monitoramento de tendências de mercado com IA para antecipar oportunidades e orientar roadmaps estratégicos.</p>
+    <div class="tags">
+      <span class="tag">IA</span>
+      <span class="tag">Pesquisa</span>
+      <span class="tag">Inovação</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 Analista de Inteligência</span>
+      <span>📅 2024-04-01</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+  <!-- Marketing: Voice Brand Experience -->
+  <div class="card" data-status="andamento" data-area="marketing">
+    <div class="card-header">
+      <h3>Voice Brand Experience</h3>
+      <span class="status andamento">Em Andamento</span>
+    </div>
+    <p>Projeto de assistentes de voz para fortalecer a presença da marca em canais conversacionais e aumentar engajamento.</p>
+    <div class="tags">
+      <span class="tag">Voice</span>
+      <span class="tag">UX</span>
+      <span class="tag">Marketing</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 Gerente de Marketing Digital</span>
+      <span>📅 2024-07-12</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+  <!-- P&D: BioLab Next -->
+  <div class="card" data-status="andamento" data-area="p&d">
+    <div class="card-header">
+      <h3>BioLab Next</h3>
+      <span class="status andamento">Em Andamento</span>
+    </div>
+    <p>Pesquisa de novas formulações usando biotecnologia para ampliar portfólio de produtos com melhor perfil terapêutico.</p>
+    <div class="tags">
+      <span class="tag">Biotecnologia</span>
+      <span class="tag">P&D</span>
+      <span class="tag">Pesquisa</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 Líder de P&D</span>
+      <span>📅 2023-11-30</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+  <!-- P&D: Clinical Data Hub -->
+  <div class="card" data-status="andamento" data-area="p&d">
+    <div class="card-header">
+      <h3>Clinical Data Hub</h3>
+      <span class="status andamento">Em Andamento</span>
+    </div>
+    <p>Centralização e análise de dados de ensaios clínicos para acelerar estudos e melhorar controles de qualidade.</p>
+    <div class="tags">
+      <span class="tag">Dados</span>
+      <span class="tag">Clinical</span>
+      <span class="tag">P&D</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 Coordenador de Ensaios</span>
+      <span>📅 2024-01-18</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+  <!-- RH: People Analytics -->
+  <div class="card" data-status="andamento" data-area="rh">
+    <div class="card-header">
+      <h3>People Analytics</h3>
+      <span class="status andamento">Em Andamento</span>
+    </div>
+    <p>Projeto de análise de dados para apoiar tomada de decisão em gestão de talentos e retenção de colaboradores.</p>
+    <div class="tags">
+      <span class="tag">Analytics</span>
+      <span class="tag">RH</span>
+      <span class="tag">People</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 Head de People Analytics</span>
+      <span>📅 2024-03-05</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+  <!-- RH: Wellbeing Program -->
+  <div class="card" data-status="andamento" data-area="rh">
+    <div class="card-header">
+      <h3>Wellbeing Program</h3>
+      <span class="status andamento">Em Andamento</span>
+    </div>
+    <p>Programa de saúde e bem-estar para colaboradores, com ações preventivas, acompanhamento e benefícios ligados à saúde mental.</p>
+    <div class="tags">
+      <span class="tag">Saúde</span>
+      <span class="tag">RH</span>
+      <span class="tag">Bem-estar</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 Coordenador de Saúde Corporativa</span>
+      <span>📅 2024-06-01</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+  <!-- RH: Learning 4.0 -->
+  <div class="card" data-status="planejamento" data-area="rh">
+    <div class="card-header">
+      <h3>Learning 4.0</h3>
+      <span class="status planejamento">Em Planejamento</span>
+    </div>
+    <p>Plataforma digital de capacitação contínua com trilhas personalizadas e conteúdo baseado em dados de desempenho.</p>
+    <div class="tags">
+      <span class="tag">Educação</span>
+      <span class="tag">Plataforma</span>
+      <span class="tag">RH</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 Head de Desenvolvimento</span>
+      <span>📅 2024-10-15</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+  <!-- Saúde Digital: e-Clinic -->
+  <div class="card" data-status="andamento" data-area="saude_digital">
+    <div class="card-header">
+      <h3>e-Clinic</h3>
+      <span class="status andamento">Em Andamento</span>
+    </div>
+    <p>Plataforma de consultas remotas com suporte de IA para triagem e acompanhamento clínico remoto.</p>
+    <div class="tags">
+      <span class="tag">Saúde Digital</span>
+      <span class="tag">IA</span>
+      <span class="tag">Telemedicina</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 Gerente Saúde Digital</span>
+      <span>📅 2024-05-02</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+  <!-- Saúde Digital: Health Data Cloud -->
+  <div class="card" data-status="andamento" data-area="saude_digital">
+    <div class="card-header">
+      <h3>Health Data Cloud</h3>
+      <span class="status andamento">Em Andamento</span>
+    </div>
+    <p>Nuvem de dados para integração hospitalar, com foco em interoperabilidade e análises clínicas centralizadas.</p>
+    <div class="tags">
+      <span class="tag">Cloud</span>
+      <span class="tag">Dados</span>
+      <span class="tag">Saúde</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 Arquiteto de Dados Clínicos</span>
+      <span>📅 2024-04-20</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+  <!-- TI: Cloud First -->
+  <div class="card" data-status="andamento" data-area="ti">
+    <div class="card-header">
+      <h3>Cloud First</h3>
+      <span class="status andamento">Em Andamento</span>
+    </div>
+    <p>Migração de aplicações críticas para nuvem com objetivo de ganho de escalabilidade e redução de custo operacional.</p>
+    <div class="tags">
+      <span class="tag">Cloud</span>
+      <span class="tag">Infra</span>
+      <span class="tag">TI</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 Arquiteto de Cloud</span>
+      <span>📅 2024-02-01</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+  <!-- TI: CyberShield -->
+  <div class="card" data-status="andamento" data-area="ti">
+    <div class="card-header">
+      <h3>CyberShield</h3>
+      <span class="status andamento">Em Andamento</span>
+    </div>
+    <p>Programa para fortalecimento da cibersegurança com modernização de detecção e resposta a incidentes.</p>
+    <div class="tags">
+      <span class="tag">Segurança</span>
+      <span class="tag">TI</span>
+      <span class="tag">Governança</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 CISO (Líder de Segurança)</span>
+      <span>📅 2024-01-12</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+  <!-- TI: DevOps Express -->
+  <div class="card" data-status="andamento" data-area="ti">
+    <div class="card-header">
+      <h3>DevOps Express</h3>
+      <span class="status andamento">Em Andamento</span>
+    </div>
+    <p>Automação de pipelines de desenvolvimento para reduzir ciclo de entrega e aumentar frequência de deploys.</p>
+    <div class="tags">
+      <span class="tag">DevOps</span>
+      <span class="tag">Automação</span>
+      <span class="tag">TI</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 Líder de Engenharia</span>
+      <span>📅 2024-03-28</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+  <!-- TI: AI Helpdesk -->
+  <div class="card" data-status="piloto" data-area="ti">
+    <div class="card-header">
+      <h3>AI Helpdesk</h3>
+      <span class="status piloto">Em Piloto</span>
+    </div>
+    <p>Assistente virtual para suporte interno que resolve tickets simples e sugere próximos passos para o time de service desk.</p>
+    <div class="tags">
+      <span class="tag">IA</span>
+      <span class="tag">Suporte</span>
+      <span class="tag">TI</span>
+    </div>
+    <div class="card-footer">
+      <span>👤 Product Owner - Suporte</span>
+      <span>📅 2024-06-15</span>
+    </div>
+    <div class="actions">
+      <button class="edit-btn">Editar</button>
+      <button class="delete-btn">Remover</button>
+    </div>
+    <a href="#" class="btn">Ver Detalhes</a>
+  </div>
+
+</div>
 
     <h3>Adicionar Novo Projeto</h3>
     <form id="addProjectForm" class="add-form">
@@ -188,17 +445,17 @@
 </body>
 
 <script>
-    window.watsonAssistantChatOptions = {
-        integrationID: "df34724e-de0a-4d5e-ac2d-dbfd6035a424", // The ID of this integration.
-        region: "au-syd", // The region your integration is hosted in.
-        serviceInstanceID: "24ae2d13-49b0-4505-9d00-167a75f7c2c5", // The ID of your service instance.
-        onLoad: async (instance) => { await instance.render(); }
-    };
-    setTimeout(function () {
-        const t = document.createElement('script');
-        t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-        document.head.appendChild(t);
-    });
+  window.watsonAssistantChatOptions = {
+    integrationID: "df34724e-de0a-4d5e-ac2d-dbfd6035a424", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "24ae2d13-49b0-4505-9d00-167a75f7c2c5", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
 </script>
 
 </html>
